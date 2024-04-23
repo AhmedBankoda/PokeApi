@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+	background-color: #faca0c;
+}
+
+input[type="text"] {
+	border-radius: 10px;
+	padding: 5px 12px;
+	font-size: 14px;
+	height: 40px;
+}
+
+	input[type="text"]:focus {
+		outline: none;
+		box-shadow: 0px 0px 2px #0066ff;
+	}
+
+.home {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-width: 20px;
+	
+}
+
+.search-message {
+	margin-top: 16px;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.pokemon-card {
+	border: 4px solid white;
+	border-radius: 16px;
+	display: flex;
+	padding: 8px;
+	text-align: center;
+	background-color: #e0d494;
+	font-weight: 800;
+	color: black;
+	text-transform: capitalize;
+	align-items: center;
+	justify-content: center; 
+	
+}
+
+.search-grid {
+	margin-top: 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: grid;
+	grid-template-columns: repeat(5,500fr);
+	grid-gap: 8px;
+	padding-bottom: 5px;
+	align-items: center;
+	text-align: center 
+}
+
+.pokemon-card-large {
+	border: 4px solid white;
+	border-radius: 1rem;
+	text-align: center;
+	box-sizing: border-box;
+	margin: 0.5rem;
+	background-color: #e0d494;
+	font-weight: 800;
+	color: black;
+	justify-content: center;
+}
+
+.card-section {
+	text-align: left;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #f0eee6;
+	text-transform: capitalize;
+	align-items: center;
+}
+
+	.card-section:first-of-type {
+		margin-top: 24px;
+	}
+
+	.card-section:last-child {
+		border-bottom-right-radius: 0.7rem;
+		border-bottom-left-radius: 0.7rem;
+	}
+
+.card-section-title {
+	color: black;
+	font-display: block;
+	font-weight: 900;
+	font-size: 24px;
+	margin-left: 16px;
+	text-transform: uppercase;
+	justify-content: flex-start;
+}
+
+.pokemon-card-large h2 {
+	font-size: 24px;
+	text-align: center;
+	display: block;
+	text-transform: capitalize;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.container {
+	margin: 64px auto;
+	max-width: 450px;
+}
+
+.card-section-content {
+	padding-left: 40px;
+	font-size: 24px;
+
+}
+ul li {
+	font-size: 20px;
+}
+
+.center {
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 200px;
+	height: 20px;
+	font-weight: 900;
+	font-size: 16px;
+	margin: auto;
+}
+
+
+
+.category {
+	border: 4px solid white;
+	border-radius: 16px;
+	display: flex;
+	padding: 8px;
+	text-align: center;
+	background-color: #e0d494;
+	font-weight: 800;
+	color: black;
+	text-transform: capitalize;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 24px;
+	background-color: #f8f9fa; /* Lighter background for better contrast */
+	border: 1px solid #dee2e6; /* Add a subtle border */
+	border-radius: 0.25rem; /* Use rem for consistent scaling */
+	transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Add a subtle shadow for depth */
+	cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+	.category:hover {
+		transform: scale(1.05); /* Slightly reduce the scale effect for subtlety */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase shadow on hover for emphasis */
+	}
+
+	.category:active {
+		transform: translateY(2px); /* Change to a push-down effect on active */
+	}
+
+.categories {
+	margin-top: 1rem; /* Use rem for consistent scaling */
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(10, 10fr); /* Responsive columns */
+	grid-gap: 0.5rem; /* Use rem for consistent scaling */
+	justify-content: center; /* Center the categories horizontally */
+	align-items: center;
+	text-align: center;
+}
+
+
+.chart-container {
+	background-color: white;
+	color: black;
+	justify-content: center;
+	position: relative;
+	
+}
+.chart{
+	background-color: white;
+	color: black;
+	position: relative;
+	
+}
